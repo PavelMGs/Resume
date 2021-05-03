@@ -3,6 +3,7 @@
 interface CssExports {
   'avatar': string;
   'avatar_img': string;
+  'current_link': string;
   'link': string;
   'links': string;
   'root': string;
