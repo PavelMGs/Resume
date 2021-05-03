@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route, Switch } from 'react-router';
 import s from './App.module.scss';
-import AboutMe from './Components/AboutMe/AboutMe';
-import Contacts from './Components/Contacts/Contacts';
-import Education from './Components/Education/Education';
+import AboutMe from './pages/AboutMe/AboutMe';
+import Contacts from './pages/Contacts/Contacts';
+import Education from './pages/Education/Education';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
-import ProjectExamples from './Components/ProjectExamples/ProjectExamples';
+import ProjectExamples from './pages/ProjectExamples/ProjectExamples';
 
 const App = () => {
     return (
