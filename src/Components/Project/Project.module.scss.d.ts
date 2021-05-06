@@ -2,6 +2,7 @@
 // Please do not change this file!
 interface CssExports {
   'description': string;
+  'done': string;
   'link_block': string;
   'project_name': string;
   'root': string;

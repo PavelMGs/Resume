@@ -3,4 +3,5 @@ export type TProject = {
     description: string,
     git: string,
     deploy: string,
+    done: Date
 };
