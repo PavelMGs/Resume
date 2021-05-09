@@ -1,18 +1,24 @@
 .root {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-
     width: 550px;
     height: 350px;
 
     margin: 35px;
     margin-top: 0px;
 
+    padding: 5px;
+
     box-shadow: 0px 0px 10px;
 
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    width: 550px;
 }
 
 .project_name {
@@ -55,16 +61,18 @@
 
 .done {
     color: inherit;
+    margin-bottom: 15px;
 } 
 
 .gallery {
     position: relative;
     align-self: center;
 
-    height: 250px;
-    width: 450px;
+    height: 250px !important;
+    width: 432px;
 
-    box-sizing: border-box;
+    box-sizing: content-box;
+    margin: 15px auto;
 }
 
 .current {
@@ -72,7 +80,7 @@
     left: 0;
     right: 0;
     height: 250px;
-    width: 450px;
+    width: 432px;
 
     object-fit: cover;
     opacity: 1;
@@ -80,6 +88,8 @@
     visibility: visible;
     
     transition: 1s;
+
+    border-radius: 15px;
 }
 
 .previous {
@@ -88,20 +98,19 @@
     top: 0;
 
     height: 250px;
-    width: 450px;
+    width: 432px;
 
     object-fit: cover;
     opacity: 0;
     visibility: unset;
 
     transition: 1s;
+
+    border-radius: 15px;
 }
 
 .another {
-    // visibility: hidden;
-    position: absolute;
-    top: 150px;
-    opacity: 0;
+    display: none;
 }
 
 .next {
@@ -110,7 +119,7 @@
     top: 0;
 
     height: 250px;
-    width: 450px;
+    width: 432px;
 
     object-fit: cover;
 
@@ -119,12 +128,14 @@
     visibility: unset;
 
     transition: 1s;
+
+    border-radius: 15px;
 }
 
 .to_prew {
     position: absolute;
     left: 5px;
-    top: 90%;
+    top: 50%;
     width: 22.5px;
     height: 22.5px;
     &::after {
@@ -154,8 +165,8 @@
 
 .to_next {
     position: absolute;
-    right: 22px;
-    top: 90%;
+    right: 0px;
+    top: 50%;
     width: 22.5px;
     height: 22.5px;
 

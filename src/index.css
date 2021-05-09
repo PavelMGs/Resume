@@ -7,3 +7,17 @@ body {
 a {
     color: rgb(20, 20, 20);
 }
+
+::-webkit-scrollbar-track {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: rgb(59, 53, 53);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}

@@ -4,5 +4,5 @@ export type TProject = {
     git: string,
     deploy: string,
     done: Date,
-    images?: string[],
+    images: string[],
 };

@@ -3,6 +3,7 @@
 interface CssExports {
   'another': string;
   'block': string;
+  'content': string;
   'current': string;
   'description': string;
   'done': string;
