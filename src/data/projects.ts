@@ -1,6 +1,7 @@
 import { movichImages } from './MovichImages';
 import { snakeImages } from './SnakeImages';
 import { toDoImages } from './ToDoImages';
+import { travelAppImages } from './TravelAppImages';
 
 export const projects = [
     {
@@ -17,7 +18,7 @@ export const projects = [
         git: 'https://github.com/borodichAlex/travel-app',
         deploy: 'https://borodichalex-travel-app.netlify.app/',
         done: new Date('2021, 04, 20'),
-        images: [],
+        images: travelAppImages,
     },
     {
         name: 'Snake',
