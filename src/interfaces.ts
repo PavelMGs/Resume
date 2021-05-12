@@ -6,3 +6,17 @@ export type TProject = {
     done: Date,
     images: string[],
 };
+
+
+export type TAditionalEducaion = {
+    name: string,
+    description: string,
+    organization: string,
+    certificate?: string,
+    notdeployed?: boolean,
+    projects?: {
+        name: string,
+        repository: string,
+        deploy: string
+    }[],
+};

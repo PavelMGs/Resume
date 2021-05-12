@@ -1,4 +1,5 @@
 import { movichImages } from './MovichImages';
+import { rsLangImages } from './RSLangImages';
 import { snakeImages } from './SnakeImages';
 import { toDoImages } from './ToDoImages';
 import { travelAppImages } from './TravelAppImages';
@@ -10,7 +11,7 @@ export const projects = [
         git: 'https://github.com/borodichAlex/rslang/tree/develop',
         deploy: 'https://rslang-team-33-borodichalex.netlify.app/',
         done: new Date('2021, 05, 03'),
-        images: [],
+        images: rsLangImages,
     },
     {
         name: 'Travel-app',

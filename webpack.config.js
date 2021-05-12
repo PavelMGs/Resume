@@ -1,6 +1,7 @@
 const path = require('path');
 const NODE_ENV = process.env.NODE_ENV;
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     resolve: {
@@ -47,7 +48,7 @@ module.exports = {
                 ]
             },
             {
-                test: [/\.jpg$/, /\.png$/],
+                test: [/\.jpg$/, /\.png$/, /\.pdf$/],
                 use: 'url-loader'
             }
         ]
