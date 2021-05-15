@@ -14,7 +14,7 @@ export const projects = [
         images: rsLangImages,
     },
     {
-        name: 'Travel-app',
+        name: 'TravelApp',
         description: 'Command project within RS-school React-course. In this app i make header, all header component and PhotoGallery on Country page, frontend side of places rating system. Sent most of the commits from the account PavelClone. Full-adaptive app',
         git: 'https://github.com/borodichAlex/travel-app',
         deploy: 'https://borodichalex-travel-app.netlify.app/',

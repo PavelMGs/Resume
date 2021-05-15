@@ -26,21 +26,37 @@ export const additionalEducation = [
     },
     {
         name: 'ReactPro-marathon',
-        description: '',
+        description: 'The next marathon is from Zar Zakharov. For unknown reasons, it was not completed, the project is also in limbo. Topics that were studied at this marathon: Webpack, TypeScript, ReactHooks, touched upon testing using the Jest library, SSR. The marathon participants are still waiting for StoryBook and Axios lessons and certificates.',
         organization: 'Zar Zakharov',
-        projects: [{
-            name: 'Pokemon Game',
-            repository: '',
-            deploy: 'https://js-marathon-pokemon-game.netlify.app/'}],
+        notdeployed: true,
+        // projects: [{
+        //     name: 'Pokemon Game',
+        //     repository: '',
+        //     deploy: 'https://js-marathon-pokemon-game.netlify.app/'}],
     },
     {
         name: 'ReactCourse',
-        description: '',
+        description: 'Two-month course from RollingScopes School. There were three projects within the course, two of them were team projects. Links to projects below.',
         organization: 'RSSchool',
         certificate: RSCertificate,
-        projects: [{
-            name: 'Pokemon Game',
-            repository: '',
-            deploy: 'https://js-marathon-pokemon-game.netlify.app/'}],
+        projects: [
+            {
+                name: 'Snake',
+                repository: 'https://github.com/PavelMGs/react-game',
+                deploy: 'https://pavelmgs-react-game.vercel.app/',
+            },
+
+            {
+                name: 'TravelApp',
+                repository: 'https://github.com/borodichAlex/travel-app',
+                deploy: 'https://borodichalex-travel-app.netlify.app/',
+            },
+
+            {
+                name: 'RSLang',
+                repository: 'https://github.com/borodichAlex/rslang/tree/develop',
+                deploy: 'https://rslang-team-33-borodichalex.netlify.app/',
+            },
+        ],
     },
 ]

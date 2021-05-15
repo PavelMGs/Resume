@@ -71,7 +71,18 @@ const AdditionalEducationCard: React.FC<IAdditionalEducationCard> = ({ data }) =
                 ?   <div className={s.not_deployed}>
                         Project are not deployed
                     </div>
-                : null
+                : <div className={s.projects}>
+                    {
+                        data.projects?.map(item => (
+                            <div className={s.project}>
+                                <h3> { item.name } </h3>
+                                
+                                <span>Repository: <a href={item.repository} target="blank"> { item.repository } </a></span>
+                                <span>Deploy: <a href={item.deploy} target="blank"> { item.deploy } </a></span>
+                            </div>
+                        ))
+                    }
+                </div>
             }
         </div>
     )

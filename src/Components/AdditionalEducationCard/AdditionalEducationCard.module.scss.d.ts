@@ -7,6 +7,8 @@ interface CssExports {
   'not_deployed': string;
   'pdf_closed': string;
   'pdf_opened': string;
+  'project': string;
+  'projects': string;
   'show_button': string;
 }
 export const cssExports: CssExports;
