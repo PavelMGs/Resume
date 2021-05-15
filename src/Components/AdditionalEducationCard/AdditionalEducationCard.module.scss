@@ -1,6 +1,6 @@
 .card {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     min-height: 150px;
 
     margin-bottom: 25px;
@@ -14,6 +14,10 @@
     &:hover {
         box-shadow: inset 0 0 10px black;
     }
+}
+
+.description {
+    color: inherit;
 }
 
 .pdf_closed {
@@ -31,12 +35,22 @@
 
 .show_button, .close_button {
     background: none;
-    border: none;
+    border: 3px solid rgba(216, 216, 216, 0.34);
+    border-radius: 5px;
     outline: none;
     color: white;
     font: 16px 'Times New Roman';
 
+    margin: 15px 0;
+
+    width: 150px;
+    padding: 0;
+
     &:hover {
         color: rgb(4, 4, 90);
     }
+}
+
+.not_deployed {
+    color: red;
 }

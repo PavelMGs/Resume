@@ -32,7 +32,10 @@ const AdditionalEducationCard: React.FC<IAdditionalEducationCard> = ({ data }) =
     
     return (
         <div className={s.card}>
-            {data.name}
+            <h2> {data.name} </h2>
+            <article className={s.description}>
+                { data.description }
+            </article>
             { data.certificate
                 ? <><Document
                     file={data.certificate}
@@ -60,6 +63,14 @@ const AdditionalEducationCard: React.FC<IAdditionalEducationCard> = ({ data }) =
                     }
                 </button>
                 </>
+                : null
+            }
+
+            {
+                data.notdeployed
+                ?   <div className={s.not_deployed}>
+                        Project are not deployed
+                    </div>
                 : null
             }
         </div>

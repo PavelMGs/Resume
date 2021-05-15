@@ -15,7 +15,7 @@ export const additionalEducation = [
     },
     {
         name: 'React-marathon',
-        description: '',
+        description: 'The next marathon after JS-marathon. The project is a simple app for learning English words. My first experience with React, for this reason, the application works clumsily, in the near future it will be improved.',
         organization: 'Zar Zakharov',
         certificate: ReactMarathon,
         notdeployed: true
