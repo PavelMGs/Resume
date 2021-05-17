@@ -38,16 +38,13 @@ const AdditionalEducationCard: React.FC<IAdditionalEducationCard> = ({ data }) =
                 { data.description }
             </article>
             { data.certificate
-                ? <LazyLoad><Document
-                    file={data.certificate}
+                ? <><img
+                    src={data.certificate}
                     className={
                         pdfClosed
                             ? s.pdf_closed
                             : s.pdf_opened
-                    }
-                >
-                    <Page pageNumber={1} />
-                </Document>
+                    }/>
                 <button
                     type="button"
                     onClick={handlePdf}
@@ -63,7 +60,7 @@ const AdditionalEducationCard: React.FC<IAdditionalEducationCard> = ({ data }) =
                         : 'Close certificate'
                     }
                 </button>
-                </LazyLoad>
+                </>
                 : null
             }
 

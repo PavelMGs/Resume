@@ -1,9 +1,1 @@
-import TravelApp1 from '../../assets/TravelApp1.png';
-import TravelApp2 from '../../assets/TravelApp2.png';
-import TravelApp3 from '../../assets/TravelApp3.png';
-import TravelApp4 from '../../assets/TravelApp4.png';
-import TravelApp5 from '../../assets/TravelApp5.png';
-import TravelApp6 from '../../assets/TravelApp6.png';
-import TravelApp7 from '../../assets/TravelApp7.png';
-
-export const travelAppImages = [TravelApp1, TravelApp2, TravelApp3, TravelApp4, TravelApp5, TravelApp6, TravelApp7];
+export const travelAppImages = ['https://res.cloudinary.com/dsvroi111/image/upload/v1621248639/TravelApp1_gso4t2.png', 'https://res.cloudinary.com/dsvroi111/image/upload/v1621248642/TravelApp2_vb4ogy.png', 'https://res.cloudinary.com/dsvroi111/image/upload/v1621248641/TravelApp3_s0kn8v.png', 'https://res.cloudinary.com/dsvroi111/image/upload/v1621248640/TravelApp4_jbgnbo.png', 'https://res.cloudinary.com/dsvroi111/image/upload/v1621248641/TravelApp5_qyzi6h.png', 'https://res.cloudinary.com/dsvroi111/image/upload/v1621248642/TravelApp2_vb4ogy.png', 'https://res.cloudinary.com/dsvroi111/image/upload/v1621248641/TravelApp7_d9jbt8.png'];

@@ -1,7 +1,1 @@
-import ToDo1 from '../../assets/ToDo1.png';
-import ToDo2 from '../../assets/ToDo2.png';
-import ToDo3 from '../../assets/ToDo3.png';
-import ToDo4 from '../../assets/ToDo4.png';
-import ToDo5 from '../../assets/ToDo5.png';
-
-export const toDoImages = [ToDo1, ToDo2, ToDo3, ToDo4, ToDo5];
+export const toDoImages = ['https://res.cloudinary.com/dsvroi111/image/upload/v1621248636/ToDo1_rjleii.png', 'https://res.cloudinary.com/dsvroi111/image/upload/v1621248636/ToDo2_gjw9xv.png', 'https://res.cloudinary.com/dsvroi111/image/upload/v1621248637/ToDo3_e970xu.png', 'https://res.cloudinary.com/dsvroi111/image/upload/v1621248636/ToDo4_up5wqb.png', 'https://res.cloudinary.com/dsvroi111/image/upload/v1621248637/ToDo5_doctqk.png'];

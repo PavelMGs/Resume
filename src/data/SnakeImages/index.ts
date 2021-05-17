@@ -1,8 +1,1 @@
-import Snake1 from '../../assets/Snake1.png';
-import Snake2 from '../../assets/Snake2.png';
-import Snake3 from '../../assets/Snake3.png';
-import Snake4 from '../../assets/Snake4.png';
-import Snake5 from '../../assets/Snake5.png';
-import Snake6 from '../../assets/Snake6.png';
-
-export const snakeImages = [Snake1, Snake2, Snake3, Snake4, Snake5, Snake6];
+export const snakeImages = ['https://res.cloudinary.com/dsvroi111/image/upload/v1621248635/Snake1_ppjfio.png', 'https://res.cloudinary.com/dsvroi111/image/upload/v1621248635/Snake2_aaex5y.png', 'https://res.cloudinary.com/dsvroi111/image/upload/v1621248635/Snake3_zregzm.png', 'https://res.cloudinary.com/dsvroi111/image/upload/v1621248636/Snake4_smyxid.png', 'https://res.cloudinary.com/dsvroi111/image/upload/v1621248636/Snake5_vvdmzs.png', 'https://res.cloudinary.com/dsvroi111/image/upload/v1621248636/Snake6_pnqrhx.png'];

@@ -1,5 +1,1 @@
-import Movich1 from '../../assets/Movich1.png';
-import Movich2 from '../../assets/Movich2.png'
-import Movich3 from '../../assets/Movich3.png'
-
-export const movichImages = [Movich1, Movich2, Movich3];
+export const movichImages = ['https://res.cloudinary.com/dsvroi111/image/upload/v1621248631/Movich1_oqtrkb.png', 'https://res.cloudinary.com/dsvroi111/image/upload/v1621248630/Movich2_kg15mk.png', 'https://res.cloudinary.com/dsvroi111/image/upload/v1621248630/Movich3_zmyw9d.png'];

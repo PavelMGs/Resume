@@ -7,7 +7,7 @@ export const additionalEducation = [
         name: 'JS-marathon',
         description: 'A three-week marathon in native JS with a simple card game as a project. Zar Zakharov taught the material and conducted the code review.',
         organization: 'Zar Zakharov',
-        certificate: JSMarathon,
+        certificate: 'https://res.cloudinary.com/dsvroi111/image/upload/v1621249990/JSMarathon_page-0001_uplv54.jpg',
         projects: [{
             name: 'Pokemon Game',
             repository: 'https://github.com/PavelMGs/js-marathon',
@@ -17,7 +17,7 @@ export const additionalEducation = [
         name: 'React-marathon',
         description: 'The next marathon after JS-marathon. The project is a simple app for learning English words. My first experience with React, for this reason, the application works clumsily, in the near future it will be improved.',
         organization: 'Zar Zakharov',
-        certificate: ReactMarathon,
+        certificate: 'https://res.cloudinary.com/dsvroi111/image/upload/v1621249960/ReactMarathon_page-0001_mhnd3m.jpg',
         notdeployed: true
         // projects: [{
         //     name: 'Learn The Words',
@@ -38,7 +38,7 @@ export const additionalEducation = [
         name: 'ReactCourse',
         description: 'Two-month course from RollingScopes School. There were three projects within the course, two of them were team projects. Links to projects below.',
         organization: 'RSSchool',
-        certificate: RSCertificate,
+        certificate: 'https://res.cloudinary.com/dsvroi111/image/upload/v1621249903/RSCertificate_page-0001_radlng.jpg',
         projects: [
             {
                 name: 'Snake',
