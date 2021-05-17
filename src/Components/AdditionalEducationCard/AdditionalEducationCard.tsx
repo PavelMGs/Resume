@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-import LazyLoad from 'react-lazyload';
 import { Document, Page } from 'react-pdf/dist/umd/entry.webpack';
 import { TAditionalEducaion } from '../../interfaces';
 import s from './AdditionalEducationCard.module.scss';
@@ -20,9 +19,15 @@ const AdditionalEducationCard: React.FC<IAdditionalEducationCard> = ({ data }) =
 
     const handlePdf = () => {
         setPdfClosed(!pdfClosedRef.current);
-        !pdfClosedRef.current
-        ? document.addEventListener('keyup', handleEscape)
-        : document.removeEventListener('keyup', handleEscape);
+        
+        if (!pdfClosedRef.current) {
+            document.addEventListener('keyup', handleEscape);
+            setTimeout(() => document.addEventListener('click', handlePdf), 100)
+        }
+        else {
+            document.removeEventListener('keyup', handleEscape);
+            document.removeEventListener('click', handlePdf);
+        };
     };
 
     const handleEscape = (e: KeyboardEvent) => {
@@ -38,29 +43,37 @@ const AdditionalEducationCard: React.FC<IAdditionalEducationCard> = ({ data }) =
                 { data.description }
             </article>
             { data.certificate
-                ? <><img
-                    src={data.certificate}
-                    className={
-                        pdfClosed
-                            ? s.pdf_closed
-                            : s.pdf_opened
-                    }/>
-                <button
-                    type="button"
-                    onClick={handlePdf}
-                    className={
-                        pdfClosed
-                        ? s.show_button
-                        : s.close_button
-                    }
-                >
-                    {
-                        pdfClosed
-                        ? 'Show certificate'
-                        : 'Close certificate'
-                    }
-                </button>
-                </>
+                ?   <div>
+                        <div 
+                            className={
+                                pdfClosed
+                                    ? s.pdf_closed
+                                    : s.img_container
+                                }
+                        >
+                            <img
+                                width={540}
+                                src={data.certificate}
+                                className={
+                                    pdfClosed
+                                        ? s.pdf_closed
+                                        : s.pdf_opened
+                                }
+                            />
+                        </div>
+                        
+                        <button
+                            type="button"
+                            onClick={handlePdf}
+                            className={
+                                pdfClosed
+                                ? s.show_button
+                                : s.close_button
+                            }
+                        >
+                            Show certificate
+                        </button>
+                    </div>
                 : null
             }
 

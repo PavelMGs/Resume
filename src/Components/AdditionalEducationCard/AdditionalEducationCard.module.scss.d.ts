@@ -4,6 +4,7 @@ interface CssExports {
   'card': string;
   'close_button': string;
   'description': string;
+  'img_container': string;
   'not_deployed': string;
   'pdf_closed': string;
   'pdf_opened': string;
