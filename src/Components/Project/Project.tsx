@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { TProject } from '../../interfaces';
 import s from './Project.module.scss';
 
@@ -10,6 +10,8 @@ const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 
 const Project: React.FC<IProject> = ({ data }) => {
     const [currentPhoto, _setCurrentPhoto] = useState(0);
+
+    const RootRef = useRef<HTMLDivElement>(null);
 
     const setCurrentPhoto = (action: string) => {
         switch (action) {
@@ -29,10 +31,25 @@ const Project: React.FC<IProject> = ({ data }) => {
     };
 
     useEffect(() => {
-        console.log('asda');
-    }, [currentPhoto])
+        RootRef.current?.addEventListener('mouseleave', handleMouseLeave);
+
+        return () => {
+            RootRef.current?.removeEventListener('mouseleave', handleMouseLeave);
+        }
+    }, [])
+
+    const handleMouseLeave = () => {
+        console.log(RootRef.current?.scrollTop);
+            const interval = setInterval(() => {
+                RootRef.current
+                ? RootRef.current.scrollTop > 0
+                    ? RootRef.current.scrollTop -= 3
+                    : clearInterval(interval)
+                : clearInterval(interval);
+            }, 10)
+    }
     return (
-        <div className={s.root}>
+        <div className={s.root} ref={RootRef}>
             <div className={s.content}>
                 <h2 className={s.project_name}>{data.name}</h2>
                 <article className={s.description} dangerouslySetInnerHTML={{ __html: data.description }} />
