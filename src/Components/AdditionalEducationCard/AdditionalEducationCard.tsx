@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import LazyLoad from 'react-lazyload';
 import { Document, Page } from 'react-pdf/dist/umd/entry.webpack';
 import { TAditionalEducaion } from '../../interfaces';
 import s from './AdditionalEducationCard.module.scss';
@@ -37,7 +38,7 @@ const AdditionalEducationCard: React.FC<IAdditionalEducationCard> = ({ data }) =
                 { data.description }
             </article>
             { data.certificate
-                ? <><Document
+                ? <LazyLoad><Document
                     file={data.certificate}
                     className={
                         pdfClosed
@@ -62,7 +63,7 @@ const AdditionalEducationCard: React.FC<IAdditionalEducationCard> = ({ data }) =
                         : 'Close certificate'
                     }
                 </button>
-                </>
+                </LazyLoad>
                 : null
             }
 
