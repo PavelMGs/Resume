@@ -37,7 +37,7 @@ const AdditionalEducationCard: React.FC<IAdditionalEducationCard> = ({ data }) =
             <article className={s.description}>
                 { data.description }
             </article>
-            {/* { data.certificate
+            { data.certificate
                 ? <LazyLoad><Document
                     file={data.certificate}
                     className={
@@ -65,7 +65,7 @@ const AdditionalEducationCard: React.FC<IAdditionalEducationCard> = ({ data }) =
                 </button>
                 </LazyLoad>
                 : null
-            } */}
+            }
 
             {
                 data.notdeployed
