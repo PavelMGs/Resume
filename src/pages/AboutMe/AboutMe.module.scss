@@ -1,6 +1,19 @@
 .root {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 
     width: 500px;
+}
+
+@media (max-width: 625px) {
+    .root {
+        width: 350px;
+    }
+}
+
+@media (max-width: 360px) {
+    .root {
+        width: 200px;
+    }
 }

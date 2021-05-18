@@ -257,7 +257,11 @@
     }
     
     .to_prew {
-        top: 42.5%;ansform: rotate(45deg);
+        top: 42.5%;
+        width: 22.5px;
+        height: 22.5px;
+    
+        z-index: 5;
     }
     
     .to_next {
@@ -289,5 +293,57 @@
         text-overflow: ellipsis;
 
         width: 240px;
+    }
+
+    .gallery {
+        height: 150px;
+        width: 250px;
+
+        margin: 10px auto;
+    }
+    
+    .current {
+        height: 150px;
+        width: 250px;
+
+        border-radius: 10px;
+    }
+    
+    .previous {
+        left: -250px;
+    
+        height: 150px;
+        width: 250px;
+
+        border-radius: 10px;
+    }
+    
+    .another {
+        display: none;
+    }
+    
+    .next {
+        left: 250px;
+    
+        height: 150px;
+        width: 325px;
+
+        border-radius: 10px;
+    }
+    
+    .to_prew {
+        top: 42.5%;
+        width: 22.5px;
+        height: 22.5px;
+    
+        z-index: 5;
+    }
+    
+    .to_next {
+        top: 42.5%;
+        width: 22.5px;
+        height: 22.5px;
+    
+        z-index: 5;
     }
 }
