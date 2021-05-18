@@ -3,9 +3,13 @@
 interface CssExports {
   'avatar': string;
   'avatar_img': string;
+  'burger': string;
+  'close_burg': string;
+  'container': string;
   'current_link': string;
   'link': string;
   'links': string;
+  'open': string;
   'root': string;
 }
 export const cssExports: CssExports;

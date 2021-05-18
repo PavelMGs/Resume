@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer } from 'react';
+import React, { useEffect, useReducer, useState } from 'react';
 import s from './Header.module.scss';
 import Avatar from '../../assets/Avatar.jpg';
 import { Link, useLocation } from 'react-router-dom';
@@ -33,6 +33,7 @@ const links = [
 const Header = () => {
     const location = useLocation();
     const [updater, forceUpdate] = useReducer(x => x + 1, 0);
+    const [isBurgerOp, setIsBurgerOp] = useState(false);
 
     useEffect(() => {
         let isStartPage = true;
@@ -49,24 +50,34 @@ const Header = () => {
     }, [location]);
 
     return (
-        <div className={s.root}>
-            <div className={s.avatar}>
-                <img className={s.avatar_img} src={Avatar} alt="Oops"/>
+        <header className={s.root}>
+            <button 
+                className={`${s.burger } ${isBurgerOp ? s.close_burg : null}`}
+                onClick={() => setIsBurgerOp(!isBurgerOp)}
+            >
+                <div/>
+                <div/>
+                <div/>
+            </button>
+            <div className={`${s.container} ${isBurgerOp ? s.open : null}`}>
+                <div className={s.avatar}>
+                    <img className={s.avatar_img} src={Avatar} alt="Oops"/>
+                </div>
+                <nav className={s.links}>
+                    {
+                        links.map((item) => (
+                            <Link
+                                className={item.current ? `${s.current_link} ${s.link}` : s.link}
+                                to={ item.link }
+                                key={item.key}
+                            >
+                                { item.name }
+                            </Link>
+                        ))
+                    }
+                </nav>
             </div>
-            <nav className={s.links}>
-                {
-                    links.map((item) => (
-                        <Link
-                            className={item.current ? `${s.current_link} ${s.link}` : s.link}
-                            to={ item.link }
-                            key={item.key}
-                        >
-                            { item.name }
-                        </Link>
-                    ))
-                }
-            </nav>
-        </div>
+        </header>
     )
 }
 

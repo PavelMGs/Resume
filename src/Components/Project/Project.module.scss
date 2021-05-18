@@ -70,7 +70,7 @@
     position: relative;
     align-self: center;
 
-    height: 250px !important;
+    height: 215px;
     width: 432px;
 
     box-sizing: content-box;
@@ -81,7 +81,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    height: 250px;
+    height: 215px;
     width: 432px;
 
     object-fit: cover;
@@ -195,5 +195,99 @@
         opacity: inherit;
 
         transform: rotate(45deg);
+    }
+}
+
+@media(max-width: 645px) {
+    .root {
+        width: 345px;
+        height: 245px;
+    }
+
+    .content {
+        width: 345px;
+    }
+
+    .description {
+        width: 335px;
+    }
+
+    .block {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        width: 335px;
+    }
+
+    .gallery {
+        height: 150px;
+        width: 325px;
+
+        margin: 10px auto;
+    }
+    
+    .current {
+        height: 150px;
+        width: 325px;
+
+        border-radius: 10px;
+    }
+    
+    .previous {
+        left: -340px;
+    
+        height: 150px;
+        width: 325px;
+
+        border-radius: 10px;
+    }
+    
+    .another {
+        display: none;
+    }
+    
+    .next {
+        left: 340px;
+    
+        height: 150px;
+        width: 325px;
+
+        border-radius: 10px;
+    }
+    
+    .to_prew {
+        top: 42.5%;ansform: rotate(45deg);
+    }
+    
+    .to_next {
+        top: 42.5%;
+        width: 22.5px;
+        height: 22.5px;
+    
+        z-index: 5;
+    }
+}
+
+@media(max-width: 450px) {
+    .root {
+        width: 250px;
+        height: 150;
+    }
+
+    .content {
+        width: 250px;
+    }
+
+    .description {
+        width: 240px;
+    }
+
+    .block {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        width: 240px;
     }
 }

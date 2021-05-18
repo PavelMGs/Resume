@@ -4,8 +4,12 @@ body {
     padding: 0;
 }
 
+$shadow: 5px;
+
 a {
-    color: rgb(20, 20, 20);
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    text-shadow: 0 0 $shadow white;
 }
 
 ::-webkit-scrollbar-track {
